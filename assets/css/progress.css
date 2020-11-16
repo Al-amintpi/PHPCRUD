@@ -1,0 +1,73 @@
+
+/* animated progress bar css bar */
+svg.radial-progress {
+   height: auto;
+   max-width: 200px;
+   padding: 1em;
+   transform: rotate(-90deg);
+   width: 100%;
+}
+
+svg.radial-progress circle {
+   fill: transparent;
+   stroke: #fff;
+   stroke-dashoffset: 219.91148575129;
+   stroke-width: 2;
+}
+
+svg.radial-progress circle.incomplete{
+   stroke:#ebebeb;
+}
+svg.radial-progress circle.incomplete {
+   opacity: 9.45;
+}
+
+svg.radial-progress circle.complete {
+   stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress text {
+   fill: #e6dddd;
+   text-anchor: middle;
+}
+
+svg.radial-progress circle {
+   stroke: #00a99d;
+}
+
+svg.radial-progress text {
+   stroke: #f3f7ef;
+}
+
+svg.html_css circle {
+   stroke: #9b59b6;
+}
+
+svg.javascript circle {
+   stroke: #f1c40f;
+}
+
+svg.bootstrap circle {
+   stroke: #2ecc71;
+}
+
+svg.wordpress circle {
+   stroke: #f1c40f;
+}
+
+/* custome css hear */
+ 
+
+ 
+.progresh-item h2 {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 1.6rem;
+   font-family: 'Raleway', sans-serif;
+}
+
+.skill-circle {
+   display: flex;
+   align-items:center;
+    
+}

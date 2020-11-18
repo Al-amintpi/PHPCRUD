@@ -8,11 +8,19 @@
 			<div class="col-md-12">
 				<table class="table table-striped">
 				  <thead class="thead-dark">
+
+				  	<?php if(isset($_GET['delsuccess'])): ?>
+				  		<div class="alert alert-success">
+				  			Student Delete Successfull.
+				  		</div>
+				  	<?php endif; ?>	
+
 				    <tr>
 				      <th scope="col">#</th>
 				      <th scope="col">Name</th>
 				      <th scope="col">Roll</th>
 				      <th scope="col">Age</th>
+				      <th scope="col">Action</th>
 				    </tr>
 				  </thead>
 				  <tbody>
@@ -22,13 +30,17 @@
 				  	   $st_list = $statement->fetchAll(PDO::FETCH_ASSOC);
 				  	   $a=1;
 				  	   foreach ($st_list as $single_list) :
-
 				  	?>
 				    <tr>
-				      <th scope="row"><?php echo $a;$a++; ?></th>
+				      <td scope="row"><?php echo $a;$a++; ?></td>
 				      <td><?php echo $single_list['name']; ?></td>
 				      <td><?php echo $single_list['roll']; ?></td>
-				      <td><?php echo $single_list['age']; ?></td>
+				      <td><?php echo $single_list['age']; ?>Years</td>  
+				      <td>
+				      	<a href="view.php?s_id=<?php echo $single_list['id'];?>" class="btn btn-primary">View</a>
+				      	<a href="update.php?id=<?php echo $single_list['id']; ?>" class="btn btn-info">Edit</a>
+				      	<a href="delete.php?id=<?php echo $single_list['id']; ?>" class="btn btn-danger">Delete</a>
+				      </td>
 				    </tr>
 
 				<?php endforeach; ?>

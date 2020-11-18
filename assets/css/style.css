@@ -150,6 +150,10 @@ p{
 	text-align: center;
 }
 
+.btn{
+	font-size: 2rem;
+}
+
 /* Register page */
 
 .form-section{

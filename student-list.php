@@ -1,5 +1,15 @@
 <?php require_once 'header.php' ?>
-<?php require_once 'config.php' ?>
+<?php require_once 'config.php'?>
+
+
+
+<section class="search-section">
+	<form action="search.php" method="GET">
+		<input type="text" name="search" placeholder="Text here..">
+		<input type="submit" value="search" name="submit">
+	</form>
+	 
+</section>
 
 <section class="form-section">
 	<div class="container">
@@ -8,7 +18,9 @@
 			<div class="col-md-12">
 				<table class="table table-striped">
 				  <thead class="thead-dark">
-
+				  	<div class="alert alert-success">
+				  		 <h1>Welcome By <?php echo $_SESSION['newadmin'][0]['name'] ?></h1>
+				  	</div>
 				  	<?php if(isset($_GET['delsuccess'])): ?>
 				  		<div class="alert alert-success">
 				  			Student Delete Successfull.
@@ -39,7 +51,7 @@
 				      <td>
 				      	<a href="view.php?s_id=<?php echo $single_list['id'];?>" class="btn btn-primary">View</a>
 				      	<a href="update.php?id=<?php echo $single_list['id']; ?>" class="btn btn-info">Edit</a>
-				      	<a href="delete.php?id=<?php echo $single_list['id']; ?>" class="btn btn-danger">Delete</a>
+				      	<a onclick="return confirm('Are you sure?')" href="delete.php?id=<?php echo $single_list['id']; ?>" class="btn btn-danger">Delete</a>
 				      </td>
 				    </tr>
 

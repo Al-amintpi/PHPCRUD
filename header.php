@@ -1,3 +1,12 @@
+
+<?php
+	session_start();
+	if (!isset($_SESSION['newadmin'])) {
+		header('location:login.php');
+	}
+	 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +37,9 @@
 			<li><a href="index.php">Home</a></li>
 			<li><a href="register.php">Resister</a></li>
 			<li><a href="student-list.php">student List</a></li>
+			<li><a href="logout.php">Logout</a></li>
 		</ul>
 	</div>
 </section>
- 
+
+

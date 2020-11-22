@@ -16,6 +16,7 @@
 		 $address = $singlestudent['address'];
 		 $date_time = $singlestudent['date_time'];
 	}
+
 ?>
 
 <section class="form-section">

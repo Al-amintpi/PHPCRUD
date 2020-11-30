@@ -87,14 +87,14 @@ if(isset($_POST['upload_photo'])){
 ?>
 
 <form action="" method="POST" enctype="multipart/form-data">
-	<input type="file" name="profile"><br><br>
+	<input type="file" name="profile">
 	<input type="submit" name="upload_photo">
 </form>
 ```
 
 
 
-
+**মোটামোটি শেষ**
 
 
 

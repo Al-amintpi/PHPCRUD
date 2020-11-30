@@ -24,7 +24,7 @@ Array গুলি কে ইনডেক্সিং করার জন্য 
 **Syntax**<br>
 :running: **array_slice($newArray,0,5)**<br>
 0 থেকে শুরু করে ৪ পযন্ত ৪ object দেখাবে। <br>
-সাধারণ একটা custom function তৈরি করলাম explode ও implode নিয়ে <br>
+সাধারণ একটা custom function তৈরি করলাম explode ও implode ফাঙ্কশন নিয়ে <br>
 ```php 
 <?php
 $content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";

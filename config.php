@@ -1,9 +1,16 @@
 <?php
+//local development
+// $dbhost = "localhost";
+// $dbname = "student";
+// $dbuser = "root";
+// $dbpassword = "";
 
-$dbhost = "localhost";
-$dbname = "student";
-$dbuser = "root";
-$dbpassword = "";
+//remote development
+$dbhost = "remotemysql.com";
+$dbname = "qMSBrQv0ic";
+$dbuser = "qMSBrQv0ic";
+$dbpassword = "wuDPpdPkYh";
+
 date_default_timezone_set("Asia/Dhaka");
 try{
      $pdo = new PDO("mysql:host={$dbhost};dbname={$dbname}",$dbuser, $dbpassword,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
